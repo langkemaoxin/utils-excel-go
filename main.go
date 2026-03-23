@@ -454,7 +454,7 @@ func parseSheets(raw string) []string {
 func main() {
 	inputFile := flag.String("input", "input.xlsx", "待处理的 Excel 文件路径")
 	outputDir := flag.String("output", "./output", "导出目录")
-	mode := flag.String("mode", "split", "导出模式: split 或 merge")
+	mode := flag.String("mode", "merge", "导出模式: split 或 merge")
 	sheets := flag.String("sheets", "", "只处理指定 Sheet，多个用英文逗号分隔")
 	copyStyles := flag.Bool("copy-styles", true, "是否复制基础样式")
 	copyFormulas := flag.Bool("copy-formulas", false, "split 模式下是否保留公式")
